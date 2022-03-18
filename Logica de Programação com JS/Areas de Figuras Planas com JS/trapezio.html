@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de Figuras Planas - Trapézio</title>
+</head>
+<body>
+    <script>
+        alert("Vamos calcular a área de um trapézio");
+        var base_maior = prompt("Informe a base maior do trapézio");
+        var base_menor = prompt("Informe a base menor do trapézio");
+        var altura = prompt("Informe a altura do trapézio");
+    
+        base_maior= parseInt(base_maior);
+        base_menor= parseInt(base_menor);
+        altura = parseInt(altura);
+        var resultado = (base_maior + base_menor)* altura/2;
+
+        if(base_maior>base_menor){
+        document.write("A área do trapézio é igual a " + resultado+"cm²");
+        }
+
+        else{
+        document.write("Medidas incorretas. Informe novamente!");
+        }
+
+
+    </script>
+    
+</body>
+</html>
